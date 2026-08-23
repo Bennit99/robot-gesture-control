@@ -1,0 +1,141 @@
+_wandb:
+    value:
+        cli_version: 0.25.0
+        e:
+            df0b3on3zoby0wuzuzxeqs8b5ogfm4cj:
+                args:
+                    - --arch
+                    - gru
+                cpu_count: 24
+                cpu_count_logical: 32
+                cudaVersion: "13.0"
+                disk:
+                    /:
+                        total: "1035774976000"
+                        used: "702437130240"
+                email: bennit.strack@gmail.com
+                executable: C:\Users\stu245938\Desktop\robot-gesture-control\.venv\Scripts\python.exe
+                git:
+                    commit: 60976944cac23fbbc7474c7e9a562659e2a3e251
+                    remote: https://github.com/Bennit99/robot-gesture-control.git
+                gpu: NVIDIA RTX A4500
+                gpu_count: 1
+                gpu_nvidia:
+                    - architecture: Ampere
+                      cudaCores: 7168
+                      memoryTotal: "21464350720"
+                      name: NVIDIA RTX A4500
+                      uuid: GPU-9ed08a54-da5b-ba0c-16ce-750c9c92e1bb
+                host: ifi-vcai-w00FB
+                memory:
+                    total: "68333309952"
+                os: Windows-10-10.0.26200-SP0
+                program: -m jester.training.train
+                python: CPython 3.10.19
+                root: ./jester_runs\checkpoints\gru-1
+                startedAt: "2026-04-15T11:26:18.043207Z"
+                writerId: df0b3on3zoby0wuzuzxeqs8b5ogfm4cj
+        m:
+            - "1": trainer/global_step
+              "6":
+                - 3
+              "7": []
+            - "2": '*'
+              "5": 1
+              "6":
+                - 1
+              "7": []
+        python_version: 3.10.19
+        t:
+            "1":
+                - 1
+                - 41
+                - 106
+            "2":
+                - 1
+                - 41
+                - 106
+            "3":
+                - 7
+                - 13
+                - 66
+            "4": 3.10.19
+            "5": 0.25.0
+            "8":
+                - 3
+            "12": 0.25.0
+            "13": windows-amd64
+arch:
+    value: gru
+batch_size:
+    value: 64
+cache_dir:
+    value: ./data/jester/cache
+d_model:
+    value: 128
+dim_feedforward:
+    value: 256
+dropout:
+    value: 0.3
+early_stop_patience:
+    value: 10
+epochs:
+    value: 50
+gradient_clip:
+    value: 1
+hidden_dim:
+    value: 128
+input_dim:
+    value: 63
+label_smoothing:
+    value: 0.1
+labels:
+    value: ./data/jester/lables
+labels_dir:
+    value: ./data/jester/lables
+landmarks:
+    value: ./data/jester/landmarks
+landmarks_dir:
+    value: ./data/jester/landmarks
+lr:
+    value: 0.001
+max_hands:
+    value: 1
+nhead:
+    value: 4
+no_wandb:
+    value: false
+num_classes:
+    value: 27
+num_layers:
+    value: 2
+num_workers:
+    value: 4
+precision:
+    value: 16-mixed
+preload:
+    value: auto
+preload_device:
+    value: cuda
+project:
+    value: jester-gesture
+resume:
+    value: null
+run_name:
+    value: null
+save_dir:
+    value: ./jester_runs
+scheduler:
+    value: cosine
+seq_len:
+    value: 40
+skip_eval:
+    value: false
+wandb_run_id:
+    value: null
+warmup_steps:
+    value: 500
+weight_decay:
+    value: 0.0001
+world:
+    value: false

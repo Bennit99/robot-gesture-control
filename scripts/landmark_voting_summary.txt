@@ -1,0 +1,23 @@
+Total Votes: 1000
+
+--- Overall Results ---
+mediapipe: 490
+yolo: 399
+both_bad: 111
+
+--- Breakdown by Category ---
+
+yolo_more_hands:
+yolo: 321
+mediapipe: 149
+both_bad: 70
+
+mp_more_hands:
+mediapipe: 325
+yolo: 78
+both_bad: 41
+
+different_locations:
+mediapipe: 16
+yolo: 0
+both_bad: 0

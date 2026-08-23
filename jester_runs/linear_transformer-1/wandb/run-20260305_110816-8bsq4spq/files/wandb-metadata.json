@@ -1,0 +1,15 @@
+{
+  "os":  "Windows-10-10.0.26200-SP0",
+  "python":  "CPython 3.10.19",
+  "startedAt":  "2026-03-05T10:08:16.301717Z",
+  "program":  "-m jester.training.train",
+  "git":  {
+    "remote":  "https://github.com/Bennit99/robot-gesture-control.git",
+    "commit":  "3655bbc24dd3d26450c1f5850d37c83250461955"
+  },
+  "email":  "bennit.strack@gmail.com",
+  "root":  "./jester_runs",
+  "host":  "ifi-vcai-w00FB",
+  "executable":  "C:\\Users\\stu245938\\Desktop\\robot-gesture-control\\.venv\\Scripts\\python.exe",
+  "writerId":  "95h89av11wng16o12ngq71oakk8a3947"
+}

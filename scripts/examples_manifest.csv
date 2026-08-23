@@ -1,0 +1,6 @@
+video_id;label;landmarks;text_position;true_label;pred_label;detection_rate
+127972;Swipe Left;true;bottom;;
+75981;Thumbs Up;true;bottom;;
+60570;Victory;false;corner;;
+31455;Pushing Hand;true;bottom;Pushing Hand;Swipe Left;92.5
+98765;Unknown Gesture;true;side;;;

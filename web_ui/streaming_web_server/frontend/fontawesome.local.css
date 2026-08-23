@@ -1,0 +1,180 @@
+/* Local icon subset compatible with the used Font Awesome class names. */
+.fa-solid {
+    display: inline-block;
+    font-style: normal;
+    line-height: 1;
+}
+
+.fa-solid::before {
+    content: "";
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    background-color: currentColor;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    -webkit-mask-size: contain;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: contain;
+}
+
+.fa-lg {
+    font-size: 1.25em;
+}
+
+.fa-2x {
+    font-size: 2em;
+}
+
+.fa-4x {
+    font-size: 4em;
+}
+
+.fa-5x {
+    font-size: 5em;
+}
+
+@keyframes fa-spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.fa-spin::before {
+    animation: fa-spin 1s linear infinite;
+}
+
+.fa-xmark::before {
+    -webkit-mask-image: url('./icons/fa/xmark.svg');
+    mask-image: url('./icons/fa/xmark.svg');
+}
+
+.fa-spinner::before {
+    -webkit-mask-image: url('./icons/fa/spinner.svg');
+    mask-image: url('./icons/fa/spinner.svg');
+}
+
+.fa-moon::before {
+    -webkit-mask-image: url('./icons/fa/moon.svg');
+    mask-image: url('./icons/fa/moon.svg');
+}
+
+.fa-server::before {
+    -webkit-mask-image: url('./icons/fa/server.svg');
+    mask-image: url('./icons/fa/server.svg');
+}
+
+.fa-circle-info::before {
+    -webkit-mask-image: url('./icons/fa/circle-info.svg');
+    mask-image: url('./icons/fa/circle-info.svg');
+}
+
+.fa-stop::before {
+    -webkit-mask-image: url('./icons/fa/stop.svg');
+    mask-image: url('./icons/fa/stop.svg');
+}
+
+.fa-circle-notch::before {
+    -webkit-mask-image: url('./icons/fa/circle-notch.svg');
+    mask-image: url('./icons/fa/circle-notch.svg');
+}
+
+.fa-gear::before {
+    -webkit-mask-image: url('./icons/fa/gear.svg');
+    mask-image: url('./icons/fa/gear.svg');
+}
+
+.fa-play::before {
+    -webkit-mask-image: url('./icons/fa/play.svg');
+    mask-image: url('./icons/fa/play.svg');
+}
+
+.fa-circle-xmark::before {
+    -webkit-mask-image: url('./icons/fa/circle-xmark.svg');
+    mask-image: url('./icons/fa/circle-xmark.svg');
+}
+
+.fa-rotate-left::before {
+    -webkit-mask-image: url('./icons/fa/rotate-left.svg');
+    mask-image: url('./icons/fa/rotate-left.svg');
+}
+
+.fa-eye::before {
+    -webkit-mask-image: url('./icons/fa/eye-solid-full.svg');
+    mask-image: url('./icons/fa/eye-solid-full.svg');
+}
+
+.fa-triangle-exclamation::before {
+    -webkit-mask-image: url('./icons/fa/triangle-exclamation.svg');
+    mask-image: url('./icons/fa/triangle-exclamation.svg');
+}
+
+.fa-chevron-down::before {
+    -webkit-mask-image: url('./icons/fa/chevron-down.svg');
+    mask-image: url('./icons/fa/chevron-down.svg');
+}
+
+.fa-hand-fist::before {
+    -webkit-mask-image: url('./icons/fa/hand-fist.svg');
+    mask-image: url('./icons/fa/hand-fist.svg');
+}
+
+.fa-hand::before {
+    -webkit-mask-image: url('./icons/fa/hand.svg');
+    mask-image: url('./icons/fa/hand.svg');
+}
+
+.fa-hand-pointer::before {
+    -webkit-mask-image: url('./icons/fa/hand-pointer.svg');
+    mask-image: url('./icons/fa/hand-pointer.svg');
+}
+
+.fa-thumbs-down::before {
+    -webkit-mask-image: url('./icons/fa/thumbs-down.svg');
+    mask-image: url('./icons/fa/thumbs-down.svg');
+}
+
+.fa-thumbs-up::before {
+    -webkit-mask-image: url('./icons/fa/thumbs-up.svg');
+    mask-image: url('./icons/fa/thumbs-up.svg');
+}
+
+.fa-hand-peace::before {
+    -webkit-mask-image: url('./icons/fa/hand-peace.svg');
+    mask-image: url('./icons/fa/hand-peace.svg');
+}
+
+.fa-hand-love-you::before {
+    -webkit-mask-image: url('./icons/fa/hand-love-you.svg');
+    mask-image: url('./icons/fa/hand-love-you.svg');
+}
+
+.fa-hand-sparkles::before {
+    -webkit-mask-image: url('./icons/fa/hand-sparkles.svg');
+    mask-image: url('./icons/fa/hand-sparkles.svg');
+}
+
+.fa-plus::before {
+    -webkit-mask-image: url('./icons/fa/plus.svg');
+    mask-image: url('./icons/fa/plus.svg');
+}
+
+.fa-trash::before {
+    -webkit-mask-image: url('./icons/fa/trash.svg');
+    mask-image: url('./icons/fa/trash.svg');
+}
+
+.fa-arrow-right::before {
+    -webkit-mask-image: url('./icons/fa/arrow-right.svg');
+    mask-image: url('./icons/fa/arrow-right.svg');
+}
+
+.fa-keyboard::before {
+    -webkit-mask-image: url('./icons/fa/keyboard.svg');
+    mask-image: url('./icons/fa/keyboard.svg');
+}

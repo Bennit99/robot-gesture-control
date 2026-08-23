@@ -1,0 +1,50 @@
+{
+  "os":  "Windows-10-10.0.26200-SP0",
+  "python":  "CPython 3.10.19",
+  "startedAt":  "2026-07-23T05:21:15.992234Z",
+  "args":  [
+    "--arch",
+    "gru",
+    "--flop-scale",
+    "0.125",
+    "--run-name",
+    "gru_scale_0.125x",
+    "--epochs",
+    "100",
+    "--preload",
+    "cuda"
+  ],
+  "program":  "-m jester.training.train",
+  "git":  {
+    "remote":  "https://github.com/Bennit99/robot-gesture-control.git",
+    "commit":  "e98cf9288768d23849a919bd81aee01c7caa4367"
+  },
+  "email":  "bennit.strack@gmail.com",
+  "root":  "./jester_runs\\gru_scale_0.125x",
+  "host":  "ifi-vcai-w00FB",
+  "executable":  "C:\\Users\\stu245938\\Desktop\\robot-gesture-control\\.venv\\Scripts\\python.exe",
+  "cpu_count":  24,
+  "cpu_count_logical":  32,
+  "gpu":  "NVIDIA RTX A4500",
+  "gpu_count":  1,
+  "disk":  {
+    "/":  {
+      "total":  "1035774976000",
+      "used":  "915194228736"
+    }
+  },
+  "memory":  {
+    "total":  "68333309952"
+  },
+  "gpu_nvidia":  [
+    {
+      "name":  "NVIDIA RTX A4500",
+      "memoryTotal":  "21464350720",
+      "cudaCores":  7168,
+      "architecture":  "Ampere",
+      "uuid":  "GPU-9ed08a54-da5b-ba0c-16ce-750c9c92e1bb"
+    }
+  ],
+  "cudaVersion":  "13.2",
+  "writerId":  "x5ncvmq64xgkgasb3o9wd6vt53lajj78"
+}

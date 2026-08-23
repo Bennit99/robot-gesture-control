@@ -1,0 +1,24 @@
+{
+  "timestamp": "2026-04-15T13:35:54.660714",
+  "checkpoint": "C:\\Users\\stu245938\\Desktop\\robot-gesture-control\\jester_runs\\checkpoints\\gru-1\\checkpoints\\epoch=13-val\\acc=0.7816.ckpt",
+  "split": "val",
+  "accuracy": 0.7815648880773652,
+  "num_samples": 14787,
+  "num_classes": 27,
+  "run": {
+    "arch": "gru",
+    "epochs": 50,
+    "lr": 0.001,
+    "batch_size": 64,
+    "scheduler": "cosine",
+    "label_smoothing": 0.1,
+    "dropout": 0.3,
+    "seq_len": 40,
+    "max_hands": 1,
+    "precision": "16-mixed",
+    "wandb_project": "jester-gesture",
+    "wandb_run_id": "96cfallk",
+    "wandb_run_name": "gru_lr0.001_bs64",
+    "best_val_acc": 0.7816325426101685
+  }
+}

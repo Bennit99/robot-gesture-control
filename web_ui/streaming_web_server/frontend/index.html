@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gesture Recognition</title>
+    <link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png" />
+    <link rel="manifest" href="./manifest.json" />
+    <meta name="theme-color" content="#1976d2" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link rel="apple-touch-icon" href="icon-192.png" />
+    <link rel="stylesheet" href="./tailwind.local.css" />
+    <link rel="stylesheet" href="./fontawesome.local.css" />
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+    </style>
+</head>
+
+<body
+    class="bg-gray-100 text-gray-800 dark:bg-gray-900 dark:text-gray-200 h-screen w-screen flex flex-col overflow-hidden transition-colors duration-200">
+    <!-- App Container where views will be mounted -->
+    <div id="app" class="flex-1 w-full h-full relative"></div>
+
+    <!-- Inject Backend Context -->
+    <script>
+        // Theme initialization
+        const theme = localStorage.getItem('theme');
+        if (theme === 'dark' || (!theme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark');
+        } else {
+            document.documentElement.classList.remove('dark');
+        }
+
+        window.BACKEND_PORT = "{{BACKEND_PORT}}";
+        
+        // Dynamically resolve the backend host based on the frontend's address.
+        // If they are running on the same machine, this guarantees they stay synced even if the IP changes.
+        let injectedHost = "{{BACKEND_HOST}}";
+        if (injectedHost === "0.0.0.0" || injectedHost === "localhost" || injectedHost.startsWith("{{")) {
+            injectedHost = window.location.hostname;
+        } else {
+            // Also fallback to the window hostname to avoid stale IP addresses from .env
+            injectedHost = window.location.hostname;
+        }
+        
+        window.BACKEND_HOST = injectedHost;
+        window.BACKEND_URL = `http://${window.BACKEND_HOST}:${window.BACKEND_PORT}`;
+
+        // Register service worker for PWA
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function () {
+                navigator.serviceWorker.register('./sw.js').catch(err => {
+                    console.log('ServiceWorker registration failed: ', err);
+                });
+            });
+        }
+    </script>
+
+    <!-- Main App Logic -->
+    <script type="module" src="./js/app.js"></script>
+</body>
+
+</html>

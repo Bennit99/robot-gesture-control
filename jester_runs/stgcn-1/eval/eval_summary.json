@@ -1,0 +1,13 @@
+{
+  "timestamp": "2026-04-15T16:16:49.847002",
+  "checkpoint": "C:\\Users\\stu245938\\Desktop\\robot-gesture-control\\jester_runs\\stgcn-1\\checkpoints\\best.ckpt",
+  "split": "val",
+  "accuracy": 0.7800770947453844,
+  "num_samples": 14787,
+  "num_classes": 27,
+  "model_stats": {
+    "parameters": 247065,
+    "parameters_m": 0.247065,
+    "mflops": 143.440336
+  }
+}

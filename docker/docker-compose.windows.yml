@@ -1,0 +1,12 @@
+# Windows overlay — GPU via deploy reservations, camera streamed over UDP
+services:
+  gesture:
+    ports:
+      - "1234:1234/udp"
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]

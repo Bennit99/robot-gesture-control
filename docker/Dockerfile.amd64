@@ -1,0 +1,47 @@
+# Use official CUDA 12.4 base image (Ubuntu 22.04)
+FROM nvidia/cuda:12.4.0-devel-ubuntu22.04
+
+# Set noninteractive mode for apt
+ENV DEBIAN_FRONTEND=noninteractive
+
+# Install Python 3.11 and system deps
+RUN apt-get update && \
+    apt-get install -y software-properties-common && \
+    add-apt-repository ppa:deadsnakes/ppa && \
+    apt-get update && \
+    apt-get install -y python3.11 python3.11-venv python3.11-dev curl libgl1 && \
+    apt-get clean && \
+    rm -rf /var/lib/apt/lists/*
+
+# Set python3 to point to python3.11
+RUN update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.11 1
+
+# Install uv
+COPY --from=ghcr.io/astral-sh/uv:latest /uv /uvx /usr/local/bin/
+
+# Set work directory
+WORKDIR /app
+
+# Remove distutils-installed blinker
+RUN rm -rf /usr/lib/python3/dist-packages/blinker*
+
+# Copy dependency manifests first for better layer caching
+COPY pyproject.toml uv.lock /app/
+
+# Install only the default (inference) dependencies from the lockfile
+RUN uv sync --frozen --no-dev --no-group training
+
+# Copy only files needed for inference
+COPY main.py /app/
+COPY cfg/ /app/cfg/
+COPY engine/ /app/engine/
+COPY jester/ /app/jester/
+COPY utils/ /app/utils/
+COPY actions/ /app/actions/
+COPY models/ /app/models/
+COPY data_loader/ /app/data_loader/
+COPY plot/ /app/plot/
+COPY scripts/ /app/scripts/
+
+# Interactive shell (override with: uv run python3 main.py)
+CMD ["/bin/bash"]

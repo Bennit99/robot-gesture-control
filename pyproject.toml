@@ -1,0 +1,67 @@
+[project]
+name = "robot-gesture-control"
+version = "0.1.0"
+description = "Real-time gesture recognition for Boston Dynamics Spot"
+requires-python = ">=3.10,<3.13"
+
+#   uv add ...
+dependencies = [
+    "mediapipe==0.10.18",
+    "numpy>=1.24.3,<2.0.0",
+    "opencv-python==4.8.1.78",
+    "matplotlib==3.7.3",
+    "python-dotenv==1.0.1",
+    "pandas>=2.2.0",
+    "torch==2.6.0; sys_platform == 'linux' and platform_machine == 'aarch64'",
+    "torch>=2.1.0; sys_platform != 'linux' or platform_machine != 'aarch64'",
+    "lightning>=2.1.0",
+    "torchmetrics>=1.2.0",
+    "bosdyn-client>=5.0.0",
+    "bosdyn-api>=5.0.0",
+    "setuptools<71",
+    "flask==2.3.3",
+    "flask-cors==4.0.0",
+    "setproctitle>=1.3.7",
+    "onnxruntime<=1.19.2",
+]
+
+[dependency-groups]
+dev = []
+#    uv add --group training ...
+training = [
+    "pyarrow>=15.0.0",
+    "tqdm>=4.66.0",
+    "psutil>=5.9.0",
+    "wandb>=0.16.0",
+    "rich>=10.2.2",
+    "torchvision==0.21.0; sys_platform == 'linux' and platform_machine == 'aarch64'",
+    "torchvision>=0.16.0; sys_platform != 'linux' or platform_machine != 'aarch64'",
+    "ultralytics>=8.4.21",
+    "fvcore>=0.1.5.post20221221",
+    "onnx>=1.19.0",
+    "ml-dtypes>=0.5.0",
+]
+
+
+[[tool.uv.index]]
+name = "pytorch-cu124"
+url = "https://download.pytorch.org/whl/cu124"
+explicit = true # Sagt uv: Nutze diesen Server NUR, wenn ich es dir erlaube
+
+[tool.uv]
+required-environments = [
+    "sys_platform == 'linux' and platform_machine == 'x86_64'",
+    "sys_platform == 'linux' and platform_machine == 'aarch64'",
+]
+
+[tool.uv.sources]
+# Nutzt CUDA-Index nur auf AMD64/x86_64, sonst Standard-Index (z. B. PyPI)
+torch = [
+    { index = "pytorch-cu124", marker = "platform_machine == 'x86_64' or platform_machine == 'AMD64'" },
+]
+torchvision = [
+    { index = "pytorch-cu124", marker = "platform_machine == 'x86_64' or platform_machine == 'AMD64'" },
+]
+torchaudio = [
+    { index = "pytorch-cu124", marker = "platform_machine == 'x86_64' or platform_machine == 'AMD64'" },
+]

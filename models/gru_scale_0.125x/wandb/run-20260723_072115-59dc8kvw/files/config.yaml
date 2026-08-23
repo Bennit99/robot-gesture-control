@@ -1,0 +1,183 @@
+_wandb:
+    value:
+        cli_version: 0.26.1
+        e:
+            x5ncvmq64xgkgasb3o9wd6vt53lajj78:
+                args:
+                    - --arch
+                    - gru
+                    - --flop-scale
+                    - "0.125"
+                    - --run-name
+                    - gru_scale_0.125x
+                    - --epochs
+                    - "100"
+                    - --preload
+                    - cuda
+                cpu_count: 24
+                cpu_count_logical: 32
+                cudaVersion: "13.2"
+                disk:
+                    /:
+                        total: "1035774976000"
+                        used: "915194228736"
+                email: bennit.strack@gmail.com
+                executable: C:\Users\stu245938\Desktop\robot-gesture-control\.venv\Scripts\python.exe
+                git:
+                    commit: e98cf9288768d23849a919bd81aee01c7caa4367
+                    remote: https://github.com/Bennit99/robot-gesture-control.git
+                gpu: NVIDIA RTX A4500
+                gpu_count: 1
+                gpu_nvidia:
+                    - architecture: Ampere
+                      cudaCores: 7168
+                      memoryTotal: "21464350720"
+                      name: NVIDIA RTX A4500
+                      uuid: GPU-9ed08a54-da5b-ba0c-16ce-750c9c92e1bb
+                host: ifi-vcai-w00FB
+                memory:
+                    total: "68333309952"
+                os: Windows-10-10.0.26200-SP0
+                program: -m jester.training.train
+                python: CPython 3.10.19
+                root: ./jester_runs\gru_scale_0.125x
+                startedAt: "2026-07-23T05:21:15.992234Z"
+                writerId: x5ncvmq64xgkgasb3o9wd6vt53lajj78
+        m:
+            - "1": trainer/global_step
+              "6":
+                - 3
+              "7": []
+            - "2": '*'
+              "5": 1
+              "6":
+                - 1
+              "7": []
+        python_version: 3.10.19
+        t:
+            "1":
+                - 1
+                - 41
+                - 106
+            "2":
+                - 1
+                - 41
+                - 106
+            "3":
+                - 2
+                - 7
+                - 13
+                - 24
+                - 66
+            "4": 3.10.19
+            "5": 0.26.1
+            "8":
+                - 3
+            "12": 0.26.1
+            "13": windows-amd64
+arch:
+    value: gru
+augment:
+    value: false
+batch_size:
+    value: 64
+cache_dir:
+    value: ./data/jester/cache
+conv1d_channels:
+    value:
+        - 312
+        - 624
+        - 1248
+d_model:
+    value: 44
+dim_feedforward:
+    value: 90
+dropout:
+    value: 0.3
+early_stop_patience:
+    value: 10
+epochs:
+    value: 100
+flop_scale:
+    value: 0.125
+gradient_clip:
+    value: 1
+hidden_dim:
+    value: 45
+input_dim:
+    value: 63
+interpolate_max_gap:
+    value: 4
+interpolate_missing:
+    value: true
+label_smoothing:
+    value: 0.1
+labels:
+    value: ./data/jester/lables
+labels_dir:
+    value: ./data/jester/lables
+landmarks:
+    value: ./data/jester/landmarks
+landmarks_dir:
+    value: ./data/jester/landmarks
+lr:
+    value: 0.001
+max_hands:
+    value: 1
+min_landmarks:
+    value: 9
+nhead:
+    value: 4
+no_wandb:
+    value: false
+num_classes:
+    value: 27
+num_layers:
+    value: 2
+num_workers:
+    value: 4
+precision:
+    value: 16-mixed
+preload:
+    value: cuda
+preload_device:
+    value: cuda
+project:
+    value: jester-gesture
+resume:
+    value: null
+run_name:
+    value: gru_scale_0.125x
+save_dir:
+    value: ./jester_runs
+scale_range:
+    value:
+        - 1
+        - 2
+scheduler:
+    value: cosine
+seq_len:
+    value: 40
+shift_range:
+    value:
+        - -0.2
+        - 0.2
+skip_eval:
+    value: false
+stgcn_channels:
+    value:
+        - 64
+        - 64
+        - 128
+stgcn_temporal_kernel_size:
+    value: 9
+temporal_kernel_size:
+    value: 9
+wandb_run_id:
+    value: null
+warmup_steps:
+    value: 500
+weight_decay:
+    value: 0.0001
+world:
+    value: false

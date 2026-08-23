@@ -1,0 +1,38 @@
+[
+  {
+    "video_id": "100466",
+    "label": "No gesture (1 frames)",
+    "landmarks": true,
+    "text_position": "bottom"
+  },
+  {
+    "video_id": "100945",
+    "label": "No gesture (4 frames)",
+    "landmarks": true,
+    "text_position": "bottom"
+  },
+  {
+    "video_id": "1326",
+    "label": "No gesture (23 frames)",
+    "landmarks": true,
+    "text_position": "bottom"
+  },
+  {
+    "video_id": "1460",
+    "label": "No gesture (12 frames)",
+    "landmarks": true,
+    "text_position": "bottom"
+  },
+  {
+    "video_id": "669",
+    "label": "No gesture (2 frames)",
+    "landmarks": true,
+    "text_position": "bottom"
+  },
+  {
+    "video_id": "852",
+    "label": "No gesture (4 frames)",
+    "landmarks": true,
+    "text_position": "bottom"
+  }
+]

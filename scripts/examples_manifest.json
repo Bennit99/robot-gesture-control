@@ -1,0 +1,29 @@
+[
+    {
+        "video_id": "127972",
+        "label": "Swipe Left",
+        "landmarks": true,
+        "text_position": "bottom"
+    },
+    {
+        "video_id": "75981",
+        "label": "Thumbs Up",
+        "landmarks": true,
+        "text_position": "bottom"
+    },
+    {
+        "video_id": "60570",
+        "label": "Victory",
+        "landmarks": false,
+        "text_position": "corner"
+    },
+    {
+        "video_id": "31455",
+        "label": "Pushing Hand",
+        "landmarks": true,
+        "text_position": "bottom",
+        "true_label": "Pushing Hand",
+        "pred_label": "Swipe Left",
+        "detection_rate": 92.5
+    }
+]

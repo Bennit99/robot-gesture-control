@@ -1,0 +1,21 @@
+{
+  "timestamp": "2026-04-24T14:48:48.262201",
+  "checkpoint": "C:\\Users\\benni\\OneDrive\\Desktop\\Masterarbeit\\robot-gesture-control\\models\\gru-4.ckpt",
+  "split": "val",
+  "splits": {
+    "val": {
+      "accuracy": 0.8243224066978856,
+      "num_samples": 7047,
+      "num_classes": 27,
+      "output_dir": "C:\\Users\\benni\\OneDrive\\Desktop\\Masterarbeit\\robot-gesture-control\\models\\eval"
+    }
+  },
+  "model_stats": {
+    "parameters": 58139,
+    "parameters_m": 0.058139,
+    "mflops": null,
+    "mflops_source": "missing_fvcore",
+    "mflops_fvcore_raw": null,
+    "mflops_recurrent_estimate": null
+  }
+}

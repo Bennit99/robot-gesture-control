@@ -1,0 +1,8 @@
+# Jetson / Linux overlay — NVIDIA runtime + direct camera passthrough
+services:
+  gesture:
+    runtime: nvidia
+    privileged: true
+    devices:
+      - "/dev/video0:/dev/video0"
+    restart: unless-stopped

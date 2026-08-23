@@ -1,0 +1,37 @@
+{
+  "timestamp": "2026-07-23T07:35:26.202269",
+  "checkpoint": "C:\\Users\\stu245938\\Desktop\\robot-gesture-control\\jester_runs\\gru_scale_0.125x\\checkpoints\\best.ckpt",
+  "split": "val",
+  "splits": {
+    "val": {
+      "accuracy": 0.9162757127390834,
+      "num_samples": 11084,
+      "num_classes": 27,
+      "output_dir": "C:\\Users\\stu245938\\Desktop\\robot-gesture-control\\jester_runs\\gru_scale_0.125x\\eval"
+    }
+  },
+  "model_stats": {
+    "parameters": 69327,
+    "parameters_m": 0.069327,
+    "mflops": 5.2488,
+    "mflops_source": "recurrent_estimate",
+    "mflops_fvcore_raw": 0.00288,
+    "mflops_recurrent_estimate": 5.2488
+  },
+  "run": {
+    "arch": "gru",
+    "epochs": 100,
+    "lr": 0.001,
+    "batch_size": 64,
+    "scheduler": "cosine",
+    "label_smoothing": 0.1,
+    "dropout": 0.3,
+    "seq_len": 40,
+    "max_hands": 1,
+    "precision": "16-mixed",
+    "wandb_project": "jester-gesture",
+    "wandb_run_id": "59dc8kvw",
+    "wandb_run_name": "gru_scale_0.125x",
+    "best_val_acc": 0.9161854982376099
+  }
+}

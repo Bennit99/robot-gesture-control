@@ -1,0 +1,1 @@
+{"train/loss":1.203428030014038,"val/acc":0.772029459476471,"val/acc_top5":0.8951781988143921,"trainer/global_step":92649,"val/f1_macro":0.8004509210586548,"val/loss":1.3339285850524902,"train/acc":0.7900254726409912,"_step":18629,"epoch":49,"_wandb":{"runtime":1335},"_runtime":1335,"lr-AdamW":1.0000002871536853e-06,"_timestamp":1.7727145618453622e+09}

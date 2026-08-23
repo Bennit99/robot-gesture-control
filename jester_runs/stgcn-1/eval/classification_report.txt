@@ -1,0 +1,33 @@
+Class                                 Prec Recall     F1  Support
+-----------------------------------------------------------------
+Swiping Left                         0.845  0.709  0.771      494
+Swiping Right                        0.835  0.677  0.748      486
+Swiping Down                         0.881  0.837  0.858      520
+Swiping Up                           0.884  0.781  0.830      508
+Pushing Hand Away                    0.929  0.877  0.902      538
+Pulling Hand In                      0.884  0.808  0.844      526
+Sliding Two Fingers Left             0.902  0.709  0.794      519
+Sliding Two Fingers Right            0.856  0.671  0.752      516
+Sliding Two Fingers Down             0.892  0.763  0.822      531
+Sliding Two Fingers Up               0.938  0.787  0.856      522
+Pushing Two Fingers Away             0.941  0.716  0.813      531
+Pulling Two Fingers In               0.918  0.759  0.831      519
+Rolling Hand Forward                 0.869  0.750  0.805      521
+Rolling Hand Backward                0.873  0.724  0.792      493
+Turning Hand Clockwise               0.802  0.686  0.739      385
+Turning Hand Counterclockwise        0.789  0.729  0.758      399
+Zooming In With Full Hand            0.945  0.816  0.876      526
+Zooming Out With Full Hand           0.959  0.837  0.893      526
+Zooming In With Two Fingers          0.950  0.831  0.887      522
+Zooming Out With Two Fingers         0.973  0.809  0.884      530
+Thumb Up                             0.833  0.729  0.777      539
+Thumb Down                           0.916  0.799  0.853      536
+Shaking Hand                         0.932  0.905  0.918      528
+Stop Sign                            0.900  0.920  0.910      536
+Drumming Fingers                     0.942  0.873  0.906      535
+No gesture                           0.230  0.942  0.370      533
+Doing other things                   0.702  0.700  0.701     1468
+-----------------------------------------------------------------
+Accuracy                                           0.780    14787
+Macro avg                            0.864  0.783  0.811    14787
+Weighted avg                         0.854  0.780  0.805    14787
